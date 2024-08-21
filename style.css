@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.left-logo {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.right-logo {
+    position: absolute;
+    right: 120px; /* Adjust this value if the button overlaps with the logo */
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.report-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.report-btn:hover {
+    background-color: darkred;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container::before {
+    content: "Map will be displayed here";
+    color: #666;
+    font-size: 18px;
+}
